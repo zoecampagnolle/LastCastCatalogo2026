@@ -183,7 +183,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="Last Cast, inicio"><img src="img/logo.jpg" alt="" width="34" height="34"><b>Last Cast</b></a>
+    <a class="brand" href="#inicio" aria-label="Last Cast, inicio"><img src="logo.jpg" alt="" width="34" height="34"><b>Last Cast</b></a>
     <nav class="nav" aria-label="Secciones">
       <a href="#disenos">Diseños</a><a href="#chombas">Chombas</a><a href="#gorras">Gorras</a><a href="#talles">Talles</a><a href="#pagos">Pagos</a>
     </nav>
@@ -192,7 +192,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
 <main class="wrap" id="inicio">
   <div class="hero">
-    <img src="img/hero.jpg" alt="Remeras Last Cast colgadas en una cabaña de pesca">
+    <img src="hero.jpg" alt="Remeras Last Cast colgadas en una cabaña de pesca">
     <div class="hero-in">
       <div class="eyebrow" style="color:#f58a2f">Catálogo 2026 · Edición limitada</div>
       <h1>Fish more.<br><em>Live wilder.</em></h1>
@@ -239,7 +239,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <div class="eyebrow">Bordadas</div>
     <h2>Chombas de piqué</h2>
     <div class="split">
-      <img src="img/chombas.jpg" alt="Chombas de piqué bordadas Last Cast en azul marino, gris claro y negro" loading="lazy">
+      <img src="chombas.jpg" alt="Chombas de piqué bordadas Last Cast en azul marino, gris claro y negro" loading="lazy">
       <div class="panel">
         <div class="price" style="background:none;border:0;padding:0"><span>Precio por chomba</span><strong>$45.000</strong></div>
         <div>
@@ -257,8 +257,8 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <h2>Gorras</h2>
     <div class="split">
       <div style="display:grid;gap:14px">
-        <img src="img/gorras-vintage.jpg" alt="Gorras Vintage gastadas en 9 combinaciones de color y logo" loading="lazy">
-        <img src="img/gorras-street.jpg" alt="Gorras Streetwear en 6 colores con 2 opciones de logo cada una" loading="lazy">
+        <img src="gorras-vintage.jpg" alt="Gorras Vintage gastadas en 9 combinaciones de color y logo" loading="lazy">
+        <img src="gorras-street.jpg" alt="Gorras Streetwear en 6 colores con 2 opciones de logo cada una" loading="lazy">
       </div>
       <div class="panel">
         <div class="price" style="background:none;border:0;padding:0"><span>Precio por gorra</span><strong>$25.000</strong></div>
@@ -359,7 +359,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
   };
   var CATS = [["Peces", 17], ["Moscas", 14], ["Pescadores", 5], ["Logo", 1]];
   var designs = [], n = 0;
-  CATS.forEach(function (c) { for (var i = 0; i < c[1]; i++) { n++; designs.push({ n: n, cat: c[0], img: "img/d" + (n < 10 ? "0" : "") + n + ".jpg" }); } });
+  CATS.forEach(function (c) { for (var i = 0; i < c[1]; i++) { n++; designs.push({ n: n, cat: c[0], img: "d" + (n < 10 ? "0" : "") + n + ".jpg" }); } });
 
   function $(id) { return document.getElementById(id); }
   function money(v) { return "$" + String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
