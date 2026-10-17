@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Catálogo 2026 de Last Cast: remeras, buzos, chombas y gorras de pesca. Pedí por WhatsApp.">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Last Cast Catálogo 2026</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: una sola columna pensada para celular. Cabecera fija con atajos, hero con foto, pasos de compra,
+   grilla de diseños con hoja inferior para elegir prenda/color/talle, y un pedido que se envía armado por WhatsApp. */
+:root {
+  --bg: #14100d;
+  --surface: #1f1914;
+  --surface2: #2a221b;
+  --fg: #f3ebdc;
+  --muted: #b3a695;
+  --line: #3a3027;
+  --accent: #f07a1a;
+  --accent-text: #f58a2f;
+  --on-accent: #1a0f06;
+  --good: #8fcf6a;
+  --wa: #25d366;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5efe3; --surface: #fffaf0; --surface2: #ebe2d0; --fg: #1d1610; --muted: #6b5d4d; --line: #d9ccb4;
+    --accent: #e8700f; --accent-text: #b8500a; --on-accent: #1a0f06; --good: #2f7a14; color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f5efe3; --surface: #fffaf0; --surface2: #ebe2d0; --fg: #1d1610; --muted: #6b5d4d; --line: #d9ccb4;
+  --accent: #e8700f; --accent-text: #b8500a; --on-accent: #1a0f06; --good: #2f7a14; color-scheme: light;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.5;
+  padding-block: 0 88px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spacing: .02em; line-height: 1; margin: 0; text-wrap: balance; }
+h2 { font-size: 2rem; font-weight: 800; }
+h3 { font-size: 1.25rem; font-weight: 700; }
+p { margin: 0; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 980px; margin-inline: auto; }
+section { padding-block: 40px 8px; }
+.eyebrow { font-family: var(--display); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: .85rem; color: var(--accent-text); margin-bottom: 8px; }
+.lead { color: var(--muted); max-width: 60ch; margin-top: 10px; }
+
+/* Cabecera */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+.top .wrap { display: flex; align-items: center; gap: 14px; height: 56px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
+.brand img { width: 34px; height: 34px; border-radius: 4px; display: block; }
+.brand b { font-family: var(--display); font-size: 1.15rem; letter-spacing: .06em; text-transform: uppercase; }
+.nav { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; min-width: 0; margin-left: auto; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { white-space: nowrap; font-family: var(--display); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .95rem; text-decoration: none; padding: 8px 10px; color: var(--muted); }
+.nav a:hover { color: var(--fg); }
+
+/* Hero */
+.hero { position: relative; margin-top: 16px; border-radius: 10px; overflow: hidden; min-height: 420px; display: flex; align-items: flex-end; background: var(--surface); }
+.hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,8,5,.96) 0%, rgba(12,8,5,.9) 58%, rgba(12,8,5,.25) 82%, rgba(12,8,5,0) 100%); }
+.hero { min-height: 520px; }
+.hero img { object-position: 50% 0%; }
+.hero-in { position: relative; z-index: 1; padding: 22px; color: #f6eedf; }
+.hero h1 { font-size: clamp(2.6rem, 11vw, 4.6rem); font-weight: 800; }
+.hero h1 em { font-style: normal; color: #f58a2f; }
+.hero p { margin-top: 10px; max-width: 34ch; color: #e2d6c2; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 8px; border: 2px solid transparent; font-family: var(--display); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 1.1rem; text-decoration: none; background: var(--accent); color: var(--on-accent); }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: inherit; border-color: currentColor; }
+.btn.wa { background: var(--wa); color: #06260f; }
+.btn.block { width: 100%; }
+.btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+
+/* Promo y precios */
+.promo { margin-top: 16px; background: var(--accent); color: var(--on-accent); border-radius: 10px; padding: 14px 16px; font-weight: 600; }
+.promo b { font-family: var(--display); font-size: 1.35rem; text-transform: uppercase; letter-spacing: .03em; display: block; }
+.prices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.price { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.price span { display: block; color: var(--muted); font-size: .9rem; }
+.price strong { font-family: var(--display); font-size: 2rem; font-weight: 800; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
+.price small { display: block; color: var(--muted); font-size: .8rem; }
+
+/* Pasos */
+.steps { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.steps li::before { content: counter(s); font-family: var(--display); font-weight: 800; font-size: 2.2rem; color: var(--accent-text); text-align: center; }
+.steps b { display: block; font-family: var(--display); font-size: 1.2rem; text-transform: uppercase; letter-spacing: .03em; }
+.steps span { color: var(--muted); font-size: .95rem; }
+
+/* Diseños */
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-block: 4px; margin-top: 16px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: transparent; font-family: var(--display); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: 1rem; }
+.chip[aria-pressed="true"], .chip.on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+@media (min-width: 640px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; } }
+@media (min-width: 960px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; padding: 0; text-align: left; display: flex; flex-direction: column; }
+.card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; background: var(--surface2); }
+.card .cap { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 10px 12px 12px; }
+.card .num { font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: .02em; }
+.card .num small { font-size: .8rem; color: var(--muted); font-weight: 600; letter-spacing: .1em; margin-right: 2px; }
+.card .cat { color: var(--muted); font-size: .8rem; }
+.card:hover { border-color: var(--accent); }
+.note { color: var(--muted); font-size: .85rem; margin-top: 12px; }
+
+/* Producto aparte */
+.split { display: grid; gap: 14px; margin-top: 16px; }
+@media (min-width: 720px) { .split { grid-template-columns: 1fr 1fr; align-items: start; } }
+.split img { width: 100%; border-radius: 10px; display: block; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 12px; }
+.field label, .lab { display: block; font-family: var(--display); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
+select { width: 100%; min-height: 48px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface2); color: var(--fg); padding: 0 12px; font: inherit; }
+
+/* Talles */
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 300px; font-variant-numeric: tabular-nums; }
+th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); letter-spacing: .08em; text-transform: uppercase; font-size: .9rem; color: var(--muted); background: var(--surface); }
+td:first-child { font-family: var(--display); font-weight: 800; font-size: 1.2rem; }
+tr:last-child td { border-bottom: 0; }
+
+/* Pagos */
+.pay { display: grid; gap: 10px; margin-top: 16px; }
+@media (min-width: 720px) { .pay { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.pay > div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.pay b { display: block; font-family: var(--display); font-size: 1.15rem; text-transform: uppercase; letter-spacing: .03em; }
+.pay span { color: var(--muted); font-size: .95rem; }
+.contact { margin-top: 40px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 12px; }
+.num-wa { font-family: var(--display); font-size: 2.2rem; font-weight: 800; letter-spacing: .03em; user-select: all; }
+footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
+
+/* Barra de pedido */
+.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; padding: 10px max(16px, env(safe-area-inset-left, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--bg); border-top: 1px solid var(--line); }
+.bar button { display: flex; width: 100%; max-width: 980px; margin-inline: auto; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 18px; border: 0; border-radius: 10px; background: var(--accent); color: var(--on-accent); font-family: var(--display); font-weight: 800; letter-spacing: .05em; text-transform: uppercase; font-size: 1.2rem; }
+
+/* Hoja inferior */
+.scrim { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,.6); display: flex; align-items: flex-end; justify-content: center; }
+.sheet { width: 100%; max-width: 560px; max-height: 92%; overflow-y: auto; background: var(--bg); border: 1px solid var(--line); border-radius: 16px 16px 0 0; padding: 16px max(16px, env(safe-area-inset-left, 0px)) calc(20px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 16px; animation: up .22s ease-out; }
+@keyframes up { from { transform: translateY(24px); opacity: .6; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .sheet { animation: none; } html { scroll-behavior: auto; } }
+.sh-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.x { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--surface); font-size: 1.4rem; line-height: 1; }
+.sh-prev { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 14px; align-items: center; }
+.sh-prev img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; }
+.sh-price { font-family: var(--display); font-size: 2rem; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--accent-text); }
+.opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.opt { min-height: 46px; min-width: 52px; padding: 0 14px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); font-family: var(--display); font-weight: 700; font-size: 1.1rem; letter-spacing: .04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; }
+.opt[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); background: var(--surface2); }
+.sw { width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid rgba(128,128,128,.6); flex: none; }
+.qty { display: flex; align-items: center; gap: 4px; }
+.qty button { width: 46px; height: 46px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); font-size: 1.4rem; }
+.qty output { min-width: 40px; text-align: center; font-family: var(--display); font-size: 1.5rem; font-weight: 800; }
+.line { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding-block: 10px; border-bottom: 1px solid var(--line); }
+.line img { width: 56px; height: 56px; object-fit: cover; border-radius: 8px; }
+.line b { font-family: var(--display); font-size: 1.15rem; text-transform: uppercase; }
+.line small { display: block; color: var(--muted); }
+.line .rm { background: none; border: 0; color: var(--muted); text-decoration: underline; font-size: .85rem; padding: 6px 0; }
+.sum { display: grid; gap: 8px; }
+.sum div { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
+.sum .tot { font-family: var(--display); font-size: 1.8rem; font-weight: 800; }
+.ship { padding: 10px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); font-weight: 500; }
+.ship.ok { border-color: var(--good); color: var(--good); }
+.empty { color: var(--muted); padding-block: 10px; }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Last Cast, inicio"><img src="img/logo.jpg" alt="" width="34" height="34"><b>Last Cast</b></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#disenos">Diseños</a><a href="#chombas">Chombas</a><a href="#gorras">Gorras</a><a href="#talles">Talles</a><a href="#pagos">Pagos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="inicio">
+  <div class="hero">
+    <img src="img/hero.jpg" alt="Remeras Last Cast colgadas en una cabaña de pesca">
+    <div class="hero-in">
+      <div class="eyebrow" style="color:#f58a2f">Catálogo 2026 · Edición limitada</div>
+      <h1>Fish more.<br><em>Live wilder.</em></h1>
+      <p>Remeras, buzos canguro, chombas y gorras con diseños exclusivos de pesca. Envíos a todo el país.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#disenos">Ver los 37 diseños</a>
+        <a class="btn ghost" href="#como">Cómo comprar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="promo"><b>Envío gratis llevando 2 remeras y/o buzos</b>Combiná como quieras. La promo no incluye gorras.</div>
+
+  <section id="precios" style="padding-top:28px">
+    <div class="prices">
+      <div class="price"><span>Remera</span><strong>$35.000</strong><small>4 colores</small></div>
+      <div class="price"><span>Buzo canguro</span><strong>$50.000</strong><small>3 colores</small></div>
+      <div class="price"><span>Chomba bordada</span><strong>$45.000</strong><small>3 colores</small></div>
+      <div class="price"><span>Gorra</span><strong>$25.000</strong><small>21 combinaciones</small></div>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="eyebrow">Cómo comprar</div>
+    <h2>Cuatro pasos</h2>
+    <ol class="steps">
+      <li><div><b>Elegí el diseño</b><span>Tocá el que te guste en la grilla. Todos están como remera y como buzo.</span></div></li>
+      <li><div><b>Prenda y color</b><span>Remera en blanco, gris claro, gris oscuro o negro. Buzo en negro, blanco o gris.</span></div></li>
+      <li><div><b>Talle y cantidad</b><span>Mirá la guía de talles más abajo. Si dudás entre dos, elegí el más grande.</span></div></li>
+      <li><div><b>Enviá el pedido</b><span>Se arma el mensaje solo y lo mandás por WhatsApp. Te confirmamos y coordinamos el pago.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="disenos">
+    <div class="eyebrow">Remeras y buzos</div>
+    <h2>37 diseños exclusivos</h2>
+    <p class="lead">Elegí el número de diseño. El mismo estampado va en remera o buzo, en el color que prefieras. Las remeras son 100% algodón premium.</p>
+    <div class="chips" id="filters" role="group" aria-label="Filtrar diseños"></div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Las imágenes son ilustrativas. El color y el tamaño pueden variar según el stock disponible.</p>
+  </section>
+
+  <section id="chombas">
+    <div class="eyebrow">Bordadas</div>
+    <h2>Chombas de piqué</h2>
+    <div class="split">
+      <img src="img/chombas.jpg" alt="Chombas de piqué bordadas Last Cast en azul marino, gris claro y negro" loading="lazy">
+      <div class="panel">
+        <div class="price" style="background:none;border:0;padding:0"><span>Precio por chomba</span><strong>$45.000</strong></div>
+        <div>
+          <span class="lab">Color</span>
+          <div class="opts" id="chColor"></div>
+        </div>
+        <p class="note" style="margin:0">Todas llevan el mismo bordado Last Cast. No suma a la promo de envío gratis.</p>
+        <a class="btn wa block" id="chBtn" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="gorras">
+    <div class="eyebrow">Streetwear y Vintage</div>
+    <h2>Gorras</h2>
+    <div class="split">
+      <div style="display:grid;gap:14px">
+        <img src="img/gorras-vintage.jpg" alt="Gorras Vintage gastadas en 9 combinaciones de color y logo" loading="lazy">
+        <img src="img/gorras-street.jpg" alt="Gorras Streetwear en 6 colores con 2 opciones de logo cada una" loading="lazy">
+      </div>
+      <div class="panel">
+        <div class="price" style="background:none;border:0;padding:0"><span>Precio por gorra</span><strong>$25.000</strong></div>
+        <div class="field"><label for="gSel">Modelo y color</label><select id="gSel"></select></div>
+        <p class="note" style="margin:0">El envío gratis no incluye gorras.</p>
+        <a class="btn wa block" id="gBtn" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="talles">
+    <div class="eyebrow">Guía de talles</div>
+    <h2>Medidas</h2>
+    <p class="lead">Medí una prenda tuya sobre una superficie plana. Las medidas pueden variar 1 o 2 cm. Si dudás entre dos talles, elegí el más grande.</p>
+    <div class="chips" role="group" aria-label="Tipo de prenda">
+      <button class="chip on" id="tR" type="button">Remeras</button>
+      <button class="chip" id="tB" type="button">Buzos canguro</button>
+    </div>
+    <div class="tablewrap" id="tblR" tabindex="0" aria-label="Tabla de talles de remeras">
+      <table>
+        <thead><tr><th>Talle</th><th>Ancho</th><th>Largo</th></tr></thead>
+        <tbody>
+          <tr><td>S</td><td>51 cm</td><td>67 cm</td></tr>
+          <tr><td>M</td><td>53 cm</td><td>69 cm</td></tr>
+          <tr><td>L</td><td>55 cm</td><td>72 cm</td></tr>
+          <tr><td>XL</td><td>57 cm</td><td>74 cm</td></tr>
+          <tr><td>XXL</td><td>60 cm</td><td>76 cm</td></tr>
+          <tr><td>6</td><td>62 cm</td><td>78 cm</td></tr>
+          <tr><td>8</td><td>65 cm</td><td>81 cm</td></tr>
+          <tr><td>10</td><td>67 cm</td><td>83 cm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tablewrap" id="tblB" tabindex="0" aria-label="Tabla de talles de buzos" hidden>
+      <table>
+        <thead><tr><th>Talle</th><th>Largo</th><th>Hombro</th><th>Sisa</th><th>Manga</th></tr></thead>
+        <tbody>
+          <tr><td>S</td><td>64 cm</td><td>41 cm</td><td>55 cm</td><td>60 cm</td></tr>
+          <tr><td>M</td><td>66 cm</td><td>43 cm</td><td>56 cm</td><td>62 cm</td></tr>
+          <tr><td>L</td><td>70 cm</td><td>45 cm</td><td>59 cm</td><td>63 cm</td></tr>
+          <tr><td>XL</td><td>71 cm</td><td>47 cm</td><td>62 cm</td><td>64 cm</td></tr>
+          <tr><td>XXL</td><td>72 cm</td><td>48 cm</td><td>64 cm</td><td>65 cm</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pagos">
+    <div class="eyebrow">Pagos, envíos y cambios</div>
+    <h2>Pagá como te quede cómodo</h2>
+    <div class="pay">
+      <div><b>Billetera virtual</b><span>Transferencia desde cualquier billetera virtual.</span></div>
+      <div><b>Transferencia bancaria</b><span>De banco a banco.</span></div>
+      <div><b>Tarjeta de débito o crédito</b><span>Con crédito hay un 10% de recargo. Débito sin recargo.</span></div>
+      <div><b>Efectivo</b><span>Te generamos un link de pago para abonar en efectivo.</span></div>
+      <div><b>Envíos a todo el país</b><span>Gratis llevando 2 remeras y/o buzos. No incluye gorras.</span></div>
+      <div><b>Cambios dentro de los 30 días</b><span>Escribinos por WhatsApp o Instagram y contanos el motivo del cambio.</span></div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Prenda</th><th>Efectivo, transferencia o débito</th><th>Crédito (+10%)</th></tr></thead>
+        <tbody id="payTbl"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="contact" id="contacto">
+    <div class="eyebrow" style="margin:0">Contacto</div>
+    <h2>Pedí por WhatsApp</h2>
+    <div class="num-wa">11 5023 8870</div>
+    <a class="btn wa block" id="contactBtn" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    <a class="btn ghost block" id="igBtn" href="#" target="_blank" rel="noopener" hidden>Seguinos en Instagram</a>
+  </div>
+
+  <footer>Last Cast · Catálogo 2026 · Diseños exclusivos, edición limitada. Las imágenes son ilustrativas. Color y tamaño pueden variar según stock.</footer>
+</main>
+
+<div class="bar" id="bar" hidden><button id="barBtn" type="button"><span id="barTxt">Tu pedido</span><span id="barTot"></span></button></div>
+
+<div class="scrim" id="scrim" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="shTitle" id="sheet"></div>
+</div>
+
+<script>
+(function () {
+  var WA = "5491150238870";
+  var IG_USER = "lastcast_leopala";
+  var P = { remera: 35000, buzo: 50000, chomba: 45000, gorra: 25000 };
+  var COLORS = {
+    remera: [["Blanco", "#f3f1ec"], ["Gris claro", "#b9bbbd"], ["Gris oscuro", "#4a4a4d"], ["Negro", "#121212"]],
+    buzo: [["Negro", "#121212"], ["Blanco", "#f3f1ec"], ["Gris", "#8d8f92"]],
+    chomba: [["Azul marino", "#1d2a4a"], ["Gris claro", "#b9bbbd"], ["Negro", "#121212"]]
+  };
+  var TALLES = { remera: ["S", "M", "L", "XL", "XXL", "6", "8", "10"], buzo: ["S", "M", "L", "XL", "XXL"] };
+  var GORRAS = {
+    "Vintage gastadas": ["Arena, logo chocolate", "Arena, logo naranja", "Verde, logo naranja", "Verde, logo verde oscuro", "Salmón, logo naranja", "Marrón, logo naranja", "Marrón, logo marrón oscuro", "Gris oscura, logo negro", "Gris oscura, logo naranja"],
+    "Streetwear": ["Arena, logo naranja", "Arena, logo marrón", "Gris oscura, logo naranja", "Gris oscura, logo gris claro", "Rosa, logo naranja", "Rosa, logo arena", "Verde oscuro, logo verde oscuro", "Verde oscuro, logo naranja", "Azul, logo naranja", "Azul, logo celeste claro", "Verde militar, logo naranja", "Verde militar, logo arena"]
+  };
+  var CATS = [["Peces", 17], ["Moscas", 14], ["Pescadores", 5], ["Logo", 1]];
+  var designs = [], n = 0;
+  CATS.forEach(function (c) { for (var i = 0; i < c[1]; i++) { n++; designs.push({ n: n, cat: c[0], img: "img/d" + (n < 10 ? "0" : "") + n + ".jpg" }); } });
+
+  function $(id) { return document.getElementById(id); }
+  function money(v) { return "$" + String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
+  function pad(v) { return (v < 10 ? "0" : "") + v; }
+  function wa(msg) { return "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg); }
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+  /* Grilla */
+  var filter = "Todos";
+  function renderFilters() {
+    var box = $("filters"); box.innerHTML = "";
+    ["Todos"].concat(CATS.map(function (c) { return c[0]; })).forEach(function (f) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "chip"; b.textContent = f; b.setAttribute("aria-pressed", String(f === filter));
+      b.onclick = function () { filter = f; renderFilters(); renderGrid(); };
+      box.appendChild(b);
+    });
+  }
+  function renderGrid() {
+    var g = $("grid"); g.innerHTML = "";
+    designs.filter(function (d) { return filter === "Todos" || d.cat === filter; }).forEach(function (d) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "card"; b.setAttribute("aria-label", "Diseño " + pad(d.n) + ", " + d.cat);
+      b.innerHTML = '<img src="' + d.img + '" alt="Diseño ' + pad(d.n) + '" loading="lazy"><div class="cap"><span class="num"><small>Nº</small>' + pad(d.n) + '</span><span class="cat">' + d.cat + '</span></div>';
+      b.onclick = function () { openPick(d, b); };
+      g.appendChild(b);
+    });
+  }
+
+  /* Pedido */
+  var cart = [], lastFocus = null;
+  function counts() { return cart.reduce(function (a, i) { return a + i.qty; }, 0); }
+  function total() { return cart.reduce(function (a, i) { return a + i.qty * P[i.prenda]; }, 0); }
+  function updateBar() {
+    var c = counts();
+    $("bar").hidden = c === 0;
+    $("barTxt").textContent = "Ver tu pedido · " + c + (c === 1 ? " prenda" : " prendas");
+    $("barTot").textContent = money(total());
+  }
+  function show(html) {
+    $("sheet").innerHTML = html; $("scrim").hidden = false; document.body.style.overflow = "hidden";
+    var f = $("sheet").querySelector("button, a, select"); if (f) f.focus();
+  }
+  function closeSheet() { $("scrim").hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+  $("scrim").addEventListener("click", function (e) { if (e.target === $("scrim")) closeSheet(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("scrim").hidden) closeSheet(); });
+
+  var sel = null;
+  function openPick(d, trigger) {
+    lastFocus = trigger;
+    sel = { d: d, prenda: "remera", color: 0, talle: -1, qty: 1 };
+    drawPick();
+  }
+  function opts(list, cur, fn, withSw) {
+    return list.map(function (it, i) {
+      var label = Array.isArray(it) ? it[0] : it;
+      var sw = withSw ? '<span class="sw" style="background:' + it[1] + '"></span>' : "";
+      return '<button type="button" class="opt" data-' + fn + '="' + i + '" aria-pressed="' + (i === cur) + '">' + sw + label + "</button>";
+    }).join("");
+  }
+  function drawPick() {
+    var s = sel, d = s.d, pr = s.prenda;
+    show('<div class="sh-head"><h3 id="shTitle">Diseño ' + pad(d.n) + '</h3><button class="x" type="button" id="cl" aria-label="Cerrar">×</button></div>' +
+      '<div class="sh-prev"><img src="' + d.img + '" alt="Diseño ' + pad(d.n) + '"><div><div class="sh-price">' + money(P[pr]) + '</div><p class="note" style="margin:4px 0 0">Estampa en la espalda. Frente con el logo Last Cast chico. En la foto se ve en un solo color; podés pedirla en cualquiera de los disponibles.</p></div></div>' +
+      '<div><span class="lab">Prenda</span><div class="opts">' + opts([["Remera"], ["Buzo canguro"]], pr === "remera" ? 0 : 1, "p", false) + '</div></div>' +
+      '<div><span class="lab">Color</span><div class="opts">' + opts(COLORS[pr], s.color, "c", true) + '</div></div>' +
+      '<div><span class="lab">Talle</span><div class="opts">' + opts(TALLES[pr].map(function (t) { return [t]; }), s.talle, "t", false) + '</div></div>' +
+      '<div><span class="lab">Cantidad</span><div class="qty"><button type="button" id="qm" aria-label="Quitar uno">−</button><output id="qv">' + s.qty + '</output><button type="button" id="qp" aria-label="Sumar uno">+</button></div></div>' +
+      '<button class="btn block" type="button" id="add"' + (s.talle < 0 ? ' aria-disabled="true"' : "") + '>' + (s.talle < 0 ? "Elegí un talle" : "Agregar al pedido · " + money(P[pr] * s.qty)) + '</button>');
+    var sh = $("sheet");
+    $("cl").onclick = closeSheet;
+    sh.querySelectorAll("[data-p]").forEach(function (b) { b.onclick = function () { s.prenda = b.dataset.p === "0" ? "remera" : "buzo"; s.color = 0; s.talle = -1; drawPick(); }; });
+    sh.querySelectorAll("[data-c]").forEach(function (b) { b.onclick = function () { s.color = +b.dataset.c; drawPick(); }; });
+    sh.querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { s.talle = +b.dataset.t; drawPick(); }; });
+    $("qm").onclick = function () { if (s.qty > 1) { s.qty--; drawPick(); } };
+    $("qp").onclick = function () { if (s.qty < 20) { s.qty++; drawPick(); } };
+    $("add").onclick = function () {
+      if (s.talle < 0) return;
+      var item = { n: d.n, img: d.img, prenda: pr, color: COLORS[pr][s.color][0], talle: TALLES[pr][s.talle], qty: s.qty };
+      var ex = cart.filter(function (i) { return i.n === item.n && i.prenda === item.prenda && i.color === item.color && i.talle === item.talle; })[0];
+      if (ex) ex.qty += item.qty; else cart.push(item);
+      updateBar(); openCart();
+    };
+  }
+
+  function openCart() {
+    if (!cart.length) { closeSheet(); return; }
+    var c = 0; cart.forEach(function (i) { c += i.qty; });
+    var free = c >= 2, sub = total();
+    var lines = cart.map(function (i, k) {
+      return '<div class="line"><img src="' + i.img + '" alt=""><div><b>Diseño ' + pad(i.n) + " · " + (i.prenda === "buzo" ? "Buzo" : "Remera") + '</b><small>' + i.color + " · Talle " + i.talle + " · x" + i.qty + '</small><button class="rm" type="button" data-rm="' + k + '">Quitar</button></div><strong>' + money(i.qty * P[i.prenda]) + "</strong></div>";
+    }).join("");
+    var msg = "Hola! Quiero hacer este pedido de Last Cast:\n" + cart.map(function (i) {
+      return "- Diseño " + pad(i.n) + ", " + (i.prenda === "buzo" ? "buzo canguro" : "remera") + ", " + i.color.toLowerCase() + ", talle " + i.talle + ", x" + i.qty;
+    }).join("\n") + "\nTotal: " + money(sub) + (free ? " (envío gratis)" : " (más envío)") + "\nMi forma de pago: ";
+    show('<div class="sh-head"><h3 id="shTitle">Tu pedido</h3><button class="x" type="button" id="cl" aria-label="Cerrar">×</button></div>' +
+      "<div>" + lines + "</div>" +
+      '<div class="ship' + (free ? " ok" : "") + '">' + (free ? "Tenés envío gratis." : "Sumá 1 remera o buzo más y el envío es gratis.") + "</div>" +
+      '<div class="sum"><div class="tot"><span>Total</span><span>' + money(sub) + '</span></div><div><span>Con tarjeta de crédito (+10%)</span><span>' + money(sub * 1.1) + "</span></div></div>" +
+      '<a class="btn wa block" target="_blank" rel="noopener" href="' + wa(msg) + '">Enviar pedido por WhatsApp</a>' +
+      '<button class="btn ghost block" type="button" id="more">Seguir eligiendo</button>');
+    $("cl").onclick = closeSheet; $("more").onclick = closeSheet;
+    $("sheet").querySelectorAll("[data-rm]").forEach(function (b) { b.onclick = function () { cart.splice(+b.dataset.rm, 1); updateBar(); openCart(); }; });
+  }
+  $("barBtn").onclick = function () { lastFocus = $("barBtn"); openCart(); };
+
+  /* Chombas */
+  var chSel = 0;
+  function drawCh() {
+    $("chColor").innerHTML = opts(COLORS.chomba, chSel, "ch", true);
+    $("chColor").querySelectorAll("[data-ch]").forEach(function (b) { b.onclick = function () { chSel = +b.dataset.ch; drawCh(); }; });
+    $("chBtn").href = wa("Hola! Quiero una chomba bordada Last Cast, color " + COLORS.chomba[chSel][0].toLowerCase() + ". Talle: ");
+  }
+
+  /* Gorras */
+  var gs = $("gSel"), html = "";
+  Object.keys(GORRAS).forEach(function (g) {
+    html += '<optgroup label="' + g + '">' + GORRAS[g].map(function (v) { return '<option value="' + g + " · " + v + '">' + v + "</option>"; }).join("") + "</optgroup>";
+  });
+  gs.innerHTML = html;
+  function drawG() { $("gBtn").href = wa("Hola! Quiero una gorra Last Cast: " + gs.value + "."); }
+  gs.onchange = drawG;
+
+  /* Talles */
+  function tab(r) {
+    $("tblR").hidden = !r; $("tblB").hidden = r;
+    $("tR").classList.toggle("on", r); $("tB").classList.toggle("on", !r);
+  }
+  $("tR").onclick = function () { tab(true); }; $("tB").onclick = function () { tab(false); };
+
+  /* Pagos */
+  $("payTbl").innerHTML = [["Remera", "remera"], ["Buzo canguro", "buzo"], ["Chomba bordada", "chomba"], ["Gorra", "gorra"]].map(function (r) {
+    return "<tr><td>" + r[0] + "</td><td>" + money(P[r[1]]) + "</td><td>" + money(P[r[1]] * 1.1) + "</td></tr>";
+  }).join("");
+  document.querySelectorAll("#payTbl td:first-child").forEach(function (td) { td.style.fontSize = "1rem"; });
+
+  /* Contacto */
+  $("contactBtn").href = wa("Hola! Vi el catálogo 2026 de Last Cast y quiero consultar por ");
+  if (IG_USER) { $("igBtn").href = "https://instagram.com/" + IG_USER; $("igBtn").hidden = false; }
+
+  renderFilters(); renderGrid(); drawCh(); drawG(); updateBar();
+})();
+</script>
+
+</html>
