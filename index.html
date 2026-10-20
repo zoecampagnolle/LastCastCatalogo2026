@@ -198,7 +198,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
       <h1>Fish more.<br><em>Live wilder.</em></h1>
       <p>Remeras, buzos canguro, chombas y gorras con diseños exclusivos de pesca. Envíos a todo el país.</p>
       <div class="hero-cta">
-        <a class="btn" href="#disenos">Ver los 37 diseños</a>
+        <a class="btn" href="#disenos">Ver los 40 diseños</a>
         <a class="btn ghost" href="#como">Cómo comprar</a>
       </div>
     </div>
@@ -312,14 +312,14 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <div class="pay">
       <div><b>Billetera virtual</b><span>Transferencia desde cualquier billetera virtual.</span></div>
       <div><b>Transferencia bancaria</b><span>De banco a banco.</span></div>
-      <div><b>Tarjeta de débito o crédito</b><span>Con crédito hay un 10% de recargo. Débito sin recargo.</span></div>
+      <div><b>Tarjeta de débito o crédito</b><span>Consultanos las opciones de pago disponibles.</span></div>
       <div><b>Efectivo</b><span>Te generamos un link de pago para abonar en efectivo.</span></div>
       <div><b>Envíos a todo el país</b><span>Gratis llevando 2 remeras y/o buzos. No incluye gorras.</span></div>
       <div><b>Cambios dentro de los 30 días</b><span>Escribinos por WhatsApp o Instagram y contanos el motivo del cambio.</span></div>
     </div>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>Prenda</th><th>Efectivo, transferencia o débito</th><th>Crédito (+10%)</th></tr></thead>
+        <thead><tr><th>Prenda</th><th>Precio</th></tr></thead>
         <tbody id="payTbl"></tbody>
       </table>
     </div>
@@ -357,7 +357,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     "Vintage gastadas": ["Arena, logo chocolate", "Arena, logo naranja", "Verde, logo naranja", "Verde, logo verde oscuro", "Salmón, logo naranja", "Marrón, logo naranja", "Marrón, logo marrón oscuro", "Gris oscura, logo negro", "Gris oscura, logo naranja"],
     "Streetwear": ["Arena, logo naranja", "Arena, logo marrón", "Gris oscura, logo naranja", "Gris oscura, logo gris claro", "Rosa, logo naranja", "Rosa, logo arena", "Verde oscuro, logo verde oscuro", "Verde oscuro, logo naranja", "Azul, logo naranja", "Azul, logo celeste claro", "Verde militar, logo naranja", "Verde militar, logo arena"]
   };
-  var CATS = [["Peces", 17], ["Moscas", 14], ["Pescadores", 5], ["Logo", 1]];
+  var CATS = [["Peces", 17], ["Moscas", 14], ["Pescadores", 5], ["Logo", 1], ["Nuevos diseños", 3]];
   var designs = [], n = 0;
   CATS.forEach(function (c) { for (var i = 0; i < c[1]; i++) { n++; designs.push({ n: n, cat: c[0], img: "d" + (n < 10 ? "0" : "") + n + ".jpg" }); } });
 
@@ -410,7 +410,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
   var sel = null;
   function openPick(d, trigger) {
     lastFocus = trigger;
-    sel = { d: d, prenda: "remera", color: 0, talle: -1, qty: 1 };
+    sel = { d: d, prenda: "remera", color: 0, talle: -1, qty: 1, ubicacion: "Espalda" };
     drawPick();
   }
   function opts(list, cur, fn, withSw) {
@@ -423,8 +423,9 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
   function drawPick() {
     var s = sel, d = s.d, pr = s.prenda;
     show('<div class="sh-head"><h3 id="shTitle">Diseño ' + pad(d.n) + '</h3><button class="x" type="button" id="cl" aria-label="Cerrar">×</button></div>' +
-      '<div class="sh-prev"><img src="' + d.img + '" alt="Diseño ' + pad(d.n) + '"><div><div class="sh-price">' + money(P[pr]) + '</div><p class="note" style="margin:4px 0 0">Estampa en la espalda. Frente con el logo Last Cast chico. En la foto se ve en un solo color; podés pedirla en cualquiera de los disponibles.</p></div></div>' +
+      '<div class="sh-prev"><img src="' + d.img + '" alt="Diseño ' + pad(d.n) + '"><div><div class="sh-price">' + money(P[pr]) + '</div><p class="note" style="margin:4px 0 0">Diseño personalizable: elegí si querés la estampa en el frente o en la espalda. La ubicación del logo puede coordinarse al hacer el pedido.</p></div></div>' +
       '<div><span class="lab">Prenda</span><div class="opts">' + opts([["Remera"], ["Buzo canguro"]], pr === "remera" ? 0 : 1, "p", false) + '</div></div>' +
+      '<div><span class="lab">Ubicación del diseño</span><div class="opts">' + opts([["Espalda"], ["Frente"]], s.ubicacion === "Espalda" ? 0 : 1, "u", false) + '</div><p class="note">Elegí dónde querés que vaya el diseño: frente o espalda.</p></div>' +
       '<div><span class="lab">Color</span><div class="opts">' + opts(COLORS[pr], s.color, "c", true) + '</div></div>' +
       '<div><span class="lab">Talle</span><div class="opts">' + opts(TALLES[pr].map(function (t) { return [t]; }), s.talle, "t", false) + '</div></div>' +
       '<div><span class="lab">Cantidad</span><div class="qty"><button type="button" id="qm" aria-label="Quitar uno">−</button><output id="qv">' + s.qty + '</output><button type="button" id="qp" aria-label="Sumar uno">+</button></div></div>' +
@@ -432,13 +433,14 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     var sh = $("sheet");
     $("cl").onclick = closeSheet;
     sh.querySelectorAll("[data-p]").forEach(function (b) { b.onclick = function () { s.prenda = b.dataset.p === "0" ? "remera" : "buzo"; s.color = 0; s.talle = -1; drawPick(); }; });
+    sh.querySelectorAll("[data-u]").forEach(function (b) { b.onclick = function () { s.ubicacion = b.dataset.u === "0" ? "Espalda" : "Frente"; drawPick(); }; });
     sh.querySelectorAll("[data-c]").forEach(function (b) { b.onclick = function () { s.color = +b.dataset.c; drawPick(); }; });
     sh.querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { s.talle = +b.dataset.t; drawPick(); }; });
     $("qm").onclick = function () { if (s.qty > 1) { s.qty--; drawPick(); } };
     $("qp").onclick = function () { if (s.qty < 20) { s.qty++; drawPick(); } };
     $("add").onclick = function () {
       if (s.talle < 0) return;
-      var item = { n: d.n, img: d.img, prenda: pr, color: COLORS[pr][s.color][0], talle: TALLES[pr][s.talle], qty: s.qty };
+      var item = { n: d.n, img: d.img, prenda: pr, color: COLORS[pr][s.color][0], talle: TALLES[pr][s.talle], qty: s.qty, ubicacion: s.ubicacion };
       var ex = cart.filter(function (i) { return i.n === item.n && i.prenda === item.prenda && i.color === item.color && i.talle === item.talle; })[0];
       if (ex) ex.qty += item.qty; else cart.push(item);
       updateBar(); openCart();
@@ -450,10 +452,10 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     var c = 0; cart.forEach(function (i) { c += i.qty; });
     var free = c >= 2, sub = total();
     var lines = cart.map(function (i, k) {
-      return '<div class="line"><img src="' + i.img + '" alt=""><div><b>Diseño ' + pad(i.n) + " · " + (i.prenda === "buzo" ? "Buzo" : "Remera") + '</b><small>' + i.color + " · Talle " + i.talle + " · x" + i.qty + '</small><button class="rm" type="button" data-rm="' + k + '">Quitar</button></div><strong>' + money(i.qty * P[i.prenda]) + "</strong></div>";
+      return '<div class="line"><img src="' + i.img + '" alt=""><div><b>Diseño ' + pad(i.n) + " · " + (i.prenda === "buzo" ? "Buzo" : "Remera") + '</b><small>' + i.color + " · Diseño en " + (i.ubicacion || "Espalda").toLowerCase() + " · Talle " + i.talle + " · x" + i.qty + '</small><button class="rm" type="button" data-rm="' + k + '">Quitar</button></div><strong>' + money(i.qty * P[i.prenda]) + "</strong></div>";
     }).join("");
     var msg = "Hola! Quiero hacer este pedido de Last Cast:\n" + cart.map(function (i) {
-      return "- Diseño " + pad(i.n) + ", " + (i.prenda === "buzo" ? "buzo canguro" : "remera") + ", " + i.color.toLowerCase() + ", talle " + i.talle + ", x" + i.qty;
+      return "- Diseño " + pad(i.n) + ", " + (i.prenda === "buzo" ? "buzo canguro" : "remera") + ", " + i.color.toLowerCase() + ", diseño en " + (i.ubicacion || "Espalda").toLowerCase() + ", talle " + i.talle + ", x" + i.qty;
     }).join("\n") + "\nTotal: " + money(sub) + (free ? " (envío gratis)" : " (más envío)") + "\nMi forma de pago: ";
     show('<div class="sh-head"><h3 id="shTitle">Tu pedido</h3><button class="x" type="button" id="cl" aria-label="Cerrar">×</button></div>' +
       "<div>" + lines + "</div>" +
@@ -492,7 +494,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
   /* Pagos */
   $("payTbl").innerHTML = [["Remera", "remera"], ["Buzo canguro", "buzo"], ["Chomba bordada", "chomba"], ["Gorra", "gorra"]].map(function (r) {
-    return "<tr><td>" + r[0] + "</td><td>" + money(P[r[1]]) + "</td><td>" + money(P[r[1]] * 1.1) + "</td></tr>";
+    return "<tr><td>" + r[0] + "</td><td>" + money(P[r[1]]) + "</td></tr>";
   }).join("");
   document.querySelectorAll("#payTbl td:first-child").forEach(function (td) { td.style.fontSize = "1rem"; });
 
